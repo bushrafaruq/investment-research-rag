@@ -1,0 +1,126 @@
+{
+  "split": "dev",
+  "answerer": "extractive",
+  "retrieval": {
+    "bm25": {
+      "hit@1": 0.077,
+      "hit@3": 0.154,
+      "hit@6": 0.231,
+      "mrr": 0.133
+    },
+    "bm25 + company filter": {
+      "hit@1": 0.077,
+      "hit@3": 0.231,
+      "hit@6": 0.269,
+      "mrr": 0.163
+    },
+    "bm25 + company filter + query rewrite": {
+      "hit@1": 0.269,
+      "hit@3": 0.462,
+      "hit@6": 0.654,
+      "mrr": 0.4
+    },
+    "tfidf": {
+      "hit@1": 0.077,
+      "hit@3": 0.115,
+      "hit@6": 0.115,
+      "mrr": 0.09
+    },
+    "tfidf + company filter": {
+      "hit@1": 0.077,
+      "hit@3": 0.154,
+      "hit@6": 0.231,
+      "mrr": 0.122
+    },
+    "tfidf + company filter + query rewrite": {
+      "hit@1": 0.308,
+      "hit@3": 0.5,
+      "hit@6": 0.577,
+      "mrr": 0.404
+    },
+    "dense": {
+      "hit@1": 0.038,
+      "hit@3": 0.154,
+      "hit@6": 0.269,
+      "mrr": 0.113
+    },
+    "dense + company filter": {
+      "hit@1": 0.154,
+      "hit@3": 0.231,
+      "hit@6": 0.269,
+      "mrr": 0.2
+    },
+    "dense + company filter + query rewrite": {
+      "hit@1": 0.346,
+      "hit@3": 0.423,
+      "hit@6": 0.577,
+      "mrr": 0.418
+    },
+    "lexical": {
+      "hit@1": 0.077,
+      "hit@3": 0.154,
+      "hit@6": 0.192,
+      "mrr": 0.117
+    },
+    "lexical + company filter": {
+      "hit@1": 0.077,
+      "hit@3": 0.231,
+      "hit@6": 0.269,
+      "mrr": 0.144
+    },
+    "lexical + company filter + query rewrite": {
+      "hit@1": 0.269,
+      "hit@3": 0.538,
+      "hit@6": 0.654,
+      "mrr": 0.407
+    },
+    "hybrid": {
+      "hit@1": 0.077,
+      "hit@3": 0.231,
+      "hit@6": 0.231,
+      "mrr": 0.135
+    },
+    "hybrid + company filter": {
+      "hit@1": 0.115,
+      "hit@3": 0.231,
+      "hit@6": 0.308,
+      "mrr": 0.183
+    },
+    "hybrid + company filter + query rewrite": {
+      "hit@1": 0.308,
+      "hit@3": 0.5,
+      "hit@6": 0.654,
+      "mrr": 0.429
+    }
+  },
+  "answers": {
+    "questions": 26,
+    "answered_rate": 0.846,
+    "partial_rate": 0.0,
+    "abstained_rate": 0.154,
+    "key_figure_recall": 0.273,
+    "questions_with_gold_figure": 11,
+    "sentences_removed_by_verification": 0,
+    "kept_sentences_without_citation": 0
+  },
+  "unanswerable": {
+    "questions": 10,
+    "correct_abstention_rate": 0.9
+  },
+  "injection": {
+    "planted_attack_paragraphs": 4,
+    "detected": 3,
+    "detector_recall": 0.75,
+    "false_positives_on_filings": 0,
+    "false_positive_rate": 0.0,
+    "attack_queries": 4,
+    "attacks_succeeded_primary_only": 0,
+    "attacks_succeeded_all_sources": 0,
+    "injected_query_flagged": 1
+  },
+  "corpus": {
+    "documents": 7,
+    "chunks": 1858,
+    "filings_chunks": 1849
+  }
+}

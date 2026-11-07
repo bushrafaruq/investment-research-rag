@@ -1,0 +1,14 @@
+# Build the index on the host first:
+#   python scripts/download_filings.py && python -m rag.cli ingest data/filings
+# then: docker compose up --build   ->  http://localhost:8000/docs
+services:
+  copilot:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./index:/app/index:ro
+    environment:
+      - RAG_ANSWERER=${RAG_ANSWERER:-auto}
+      - RAG_EMBEDDER=${RAG_EMBEDDER:-lsa}
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY:-}

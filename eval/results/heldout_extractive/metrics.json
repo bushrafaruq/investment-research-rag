@@ -1,0 +1,111 @@
+{
+  "split": "heldout",
+  "answerer": "extractive",
+  "retrieval": {
+    "bm25": {
+      "hit@1": 0.0,
+      "hit@3": 0.067,
+      "hit@6": 0.067,
+      "mrr": 0.033
+    },
+    "bm25 + company filter": {
+      "hit@1": 0.0,
+      "hit@3": 0.2,
+      "hit@6": 0.267,
+      "mrr": 0.106
+    },
+    "bm25 + company filter + query rewrite": {
+      "hit@1": 0.067,
+      "hit@3": 0.267,
+      "hit@6": 0.4,
+      "mrr": 0.18
+    },
+    "tfidf": {
+      "hit@1": 0.0,
+      "hit@3": 0.133,
+      "hit@6": 0.133,
+      "mrr": 0.067
+    },
+    "tfidf + company filter": {
+      "hit@1": 0.067,
+      "hit@3": 0.2,
+      "hit@6": 0.267,
+      "mrr": 0.133
+    },
+    "tfidf + company filter + query rewrite": {
+      "hit@1": 0.0,
+      "hit@3": 0.267,
+      "hit@6": 0.333,
+      "mrr": 0.122
+    },
+    "dense": {
+      "hit@1": 0.0,
+      "hit@3": 0.0,
+      "hit@6": 0.067,
+      "mrr": 0.017
+    },
+    "dense + company filter": {
+      "hit@1": 0.067,
+      "hit@3": 0.2,
+      "hit@6": 0.333,
+      "mrr": 0.139
+    },
+    "dense + company filter + query rewrite": {
+      "hit@1": 0.067,
+      "hit@3": 0.2,
+      "hit@6": 0.333,
+      "mrr": 0.156
+    },
+    "lexical": {
+      "hit@1": 0.0,
+      "hit@3": 0.067,
+      "hit@6": 0.067,
+      "mrr": 0.033
+    },
+    "lexical + company filter": {
+      "hit@1": 0.0,
+      "hit@3": 0.133,
+      "hit@6": 0.333,
+      "mrr": 0.11
+    },
+    "lexical + company filter + query rewrite": {
+      "hit@1": 0.067,
+      "hit@3": 0.267,
+      "hit@6": 0.4,
+      "mrr": 0.183
+    },
+    "hybrid": {
+      "hit@1": 0.0,
+      "hit@3": 0.067,
+      "hit@6": 0.133,
+      "mrr": 0.044
+    },
+    "hybrid + company filter": {
+      "hit@1": 0.0,
+      "hit@3": 0.267,
+      "hit@6": 0.4,
+      "mrr": 0.15
+    },
+    "hybrid + company filter + query rewrite": {
+      "hit@1": 0.0,
+      "hit@3": 0.2,
+      "hit@6": 0.4,
+      "mrr": 0.127
+    }
+  },
+  "answers": {
+    "questions": 15,
+    "answered_rate": 0.6,
+    "partial_rate": 0.0,
+    "abstained_rate": 0.4,
+    "key_figure_recall": 0.2,
+    "questions_with_gold_figure": 15,
+    "sentences_removed_by_verification": 0,
+    "kept_sentences_without_citation": 0
+  },
+  "corpus": {
+    "documents": 5,
+    "chunks": 2145,
+    "filings_chunks": 2145
+  }
+}
